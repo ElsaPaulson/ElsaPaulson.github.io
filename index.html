@@ -5,6 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elsa Paulson Personal Website</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic styling for the tabs */
+        .tabs {
+            display: flex;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            justify-content: center;
+        }
+        .tab {
+            margin: 0 15px;
+            cursor: pointer;
+            padding: 10px 20px;
+            border: 1px solid #555;
+            border-radius: 5px;
+        }
+        .tab:hover {
+            background-color: #555;
+        }
+        .tab-content {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .active-tab-content {
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <header>
