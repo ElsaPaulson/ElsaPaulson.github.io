@@ -6,36 +6,43 @@
     <title>About Me - Elsa Paulson</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+        /* Basic styling for the tabs */
+        .tabs {
+    display: flex;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    justify-content: center;
         }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            text-align: center;
+
+        .tab {
+    margin: 0 15px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Ensure text color is white */
+    background-color: #333; /* Ensure background color matches the tabs */
+    transition: background-color 0.3s; /* Smooth transition on hover */
         }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        .tab:hover {
+    background-color: #555; /* Change background on hover */
         }
-        h1 {
-            font-size: 2em;
-            margin-bottom: 10px;
+
+        /* Styling for the active tab */
+        .tab.active {
+    background-color: #555; /* Different color for active tab */
         }
-        p {
-            font-size: 1.2em;
-            line-height: 1.6;
+
+    /* Ensure the active tab has the same color */
+        .tab.active,
+        .tab.active:hover {
+    color: white; /* Ensure the text color is white for active tab */
+    background-color: #555; /* Ensure background color is consistent */
         }
-    </style>
+</style>
 </head>
 <body>
     <header>
