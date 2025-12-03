@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Elsa Paulson</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Tabs styling (same as other pages) */
+        .tabs {
+            display: flex;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            justify-content: center;
+        }
+
+        .tab {
+            margin: 0 15px;
+            cursor: pointer;
+            padding: 10px 20px;
+            border: 1px solid #555;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            background-color: #333;
+            transition: background-color 0.3s;
+        }
+
+        .tab:hover {
+            background-color: #555;
+        }
+
+        .tab.active {
+            background-color: #555;
+        }
+
+        /* Main container styling */
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .edu-item {
+            margin-bottom: 30px;
+        }
+
+        .edu-item h2 {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="tabs">
+        <a href="about.html" class="tab">About Me</a>
+        <a href="education.html" class="tab active">Education</a>
+        <a href="experience.html" class="tab">Experience</a>
+        <a href="projects.html" class="tab">Projects and Publications</a>
+        <a href="awards.html" class="tab">Awards</a>
+        <a href="interests.html" class="tab">Interests</a>
+    </div>
+</header>
+
+<!-- ⭐⭐ PLACE YOUR EDUCATION SECTION HERE ⭐⭐ -->
+<div class="container">
+    <h1>Education</h1>
+
+    <div class="edu-item">
+        <h2>Ph.D. in Computer Science</h2>
+        <p><strong>University of North Texas</strong> • 2024 – Present</p>
+        <p>Specialization: Software Testing (Automated Testing, Test Suite Reduction, ML for QA)</p>
+    </div>
+
+    <div class="edu-item">
+        <h2>Master of Science in Computer Science</h2>
+        <p><strong>University of North Texas</strong> • 2021 – 2023</p>
+        <p>GPA: <strong>4.0 / 4.0</strong></p>
+    </div>
+
+    <div class="edu-item">
+        <h2>Bachelor of Technology in Electronics & Communication Engineering</h2>
+        <p><strong>MG University, India</strong> • 2013 – 2017</p>
+        <p>GPA: <strong>8.07 / 10</strong></p>
+    </div>
+</div>
+
+</body>
+</html>
