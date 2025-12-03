@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awards - Elsa Paulson</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .tabs {
+            display: flex;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            justify-content: center;
+        }
+
+        .tab {
+            margin: 0 15px;
+            cursor: pointer;
+            padding: 10px 20px;
+            border: 1px solid #555;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            background-color: #333;
+            transition: background-color 0.3s;
+        }
+
+        .tab:hover {
+            background-color: #555;
+        }
+
+        .tab.active {
+            background-color: #555;
+        }
+
+        /* Main container */
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .award-item {
+            margin-bottom: 25px;
+        }
+
+        .award-item h2 {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="tabs">
+        <a href="about.html" class="tab">About Me</a>
+        <a href="education.html" class="tab">Education</a>
+        <a href="experience.html" class="tab">Experience</a>
+        <a href="projects.html" class="tab">Projects and Publications</a>
+        <a href="awards.html" class="tab active">Awards</a>
+        <a href="interests.html" class="tab">Interests</a>
+    </div>
+</header>
+
+<div class="container">
+    <h1>Awards</h1>
+
+    <div class="award-item">
+        <h2>TGS TBP Base Scholarship (Fall)</h2>
+        <p><strong>Academic Year: 2024 – Present</strong></p>
+        <p>Scholarship covers tuition and mandatory fees up to 9 credits.</p>
+        <p><strong>Amount:</strong> $6,000</p>
+    </div>
+
+    <div class="award-item">
+        <h2>TGS TBP Base Scholarship (Fall)</h2>
+        <p><strong>Academic Year: 2022 – 2023</strong></p>
+        <p>Scholarship covers tuition and mandatory fees up to 9 credits.</p>
+        <p><strong>Amount:</strong> $4,000</p>
+    </div>
+
+    <div class="award-item">
+        <h2>MS Student Scholarship</h2>
+        <p><strong>Academic Year: 2022 – 2023</strong></p>
+        <p>Awarding Department: Computer Science and Engineering</p>
+        <p><strong>Amount:</strong> $1,000 ($500 each semester)</p>
+    </div>
+
+</div>
+
+</body>
+</html>
