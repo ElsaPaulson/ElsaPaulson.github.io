@@ -5,53 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experience - Elsa Paulson</title>
     <link rel="stylesheet" href="styles.css">
+
     <style>
+        /* Tabs styling (same as other pages) */
+        .tabs {
+            display: flex;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            justify-content: center;
+        }
+
+        .tab {
+            margin: 0 15px;
+            cursor: pointer;
+            padding: 10px 20px;
+            border: 1px solid #555;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            background-color: #333;
+            transition: background-color 0.3s;
+        }
+
+        .tab:hover {
+            background-color: #555;
+        }
+
+        .tab.active {
+            background-color: #555;
+        }
+
+        /* Main container styling */
         .container {
             max-width: 800px;
             margin: 50px auto;
             padding: 20px;
             background-color: white;
             border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
         .exp-item {
-            margin-bottom: 25px;
+            margin-bottom: 30px;
         }
+
         .exp-item h2 {
             margin-bottom: 5px;
         }
+
         .exp-item p {
-            margin: 5px 0;
-            line-height: 1.5;
+            margin: 3px 0;
         }
     </style>
 </head>
 
 <body>
 
+<header>
+    <div class="tabs">
+        <a href="about.html" class="tab">About Me</a>
+        <a href="education.html" class="tab">Education</a>
+        <a href="experience.html" class="tab active">Experience</a>
+        <a href="projects.html" class="tab">Projects and Publications</a>
+        <a href="awards.html" class="tab">Awards</a>
+        <a href="interests.html" class="tab">Interests</a>
+    </div>
+</header>
 
+<!-- ⭐⭐ EXPERIENCE SECTION ⭐⭐ -->
 <div class="container">
     <h1>Professional Experience</h1>
 
     <div class="exp-item">
         <h2>Teaching Assistant</h2>
-        <p><strong>University of North Texas – Denton, Texas</strong> • Aug 2024 – Present</p>
+        <p><strong>University of North Texas – Denton, Texas</strong></p>
+        <p><em>Aug 2024 – Present</em></p>
+        <p>Assisting in course instruction, grading, student support, and usability testing guidance.</p>
     </div>
 
     <div class="exp-item">
         <h2>QA Analyst</h2>
-        <p><strong>Datics Inc – Charlotte, NC</strong> • Aug 2023 – Aug 2024</p>
+        <p><strong>Datics Inc. – Charlotte, NC</strong></p>
+        <p><em>Aug 2023 – Aug 2024</em></p>
+        <p>Worked on test automation frameworks, Playwright testing, and product quality engineering.</p>
     </div>
 
     <div class="exp-item">
         <h2>Instructional Assistant</h2>
-        <p><strong>University of North Texas – Denton, Texas</strong> • Jan 2022 – May 2023</p>
+        <p><strong>University of North Texas – Denton, Texas</strong></p>
+        <p><em>Jan 2022 – May 2023</em></p>
+        <p>Supported students in coursework, assignments, and computer science lab sessions.</p>
     </div>
 
     <div class="exp-item">
         <h2>Application Developer (AT&T Siebel CRM)</h2>
-        <p><strong>IBM – Bengaluru, India</strong> • Feb 2018 – Jan 2022</p>
+        <p><strong>IBM – Bengaluru, India</strong></p>
+        <p><em>Feb 2018 – Jan 2022</em></p>
+        <p>Developed and customized CRM modules, automated workflows, and improved system performance.</p>
     </div>
+
 </div>
 
 </body>
