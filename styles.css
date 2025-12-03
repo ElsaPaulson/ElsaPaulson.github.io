@@ -1,0 +1,144 @@
+/* Global layout */
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background-color: #f7f7f7;
+    color: #222;
+}
+
+/* Header */
+.site-header {
+    background: #1f2933;
+    color: white;
+    padding: 20px 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.logo-name h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.logo-name h2 {
+    margin: 2px 0 0;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #d1e3ff;
+}
+
+.top-nav {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.top-nav a {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding: 6px 10px;
+    border-radius: 999px;
+    border: 1px solid #374151;
+}
+
+.top-nav a:hover {
+    background: #374151;
+}
+
+/* Main layout */
+.layout {
+    display: flex;
+    gap: 30px;
+    padding: 30px 5%;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 0 0 260px;
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    height: fit-content;
+}
+
+.profile-pic {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 15px;
+    background: #e5e7eb;
+}
+
+.short-bio {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.sidebar .links {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.sidebar .links a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #2563eb;
+}
+
+.sidebar .links a:hover {
+    text-decoration: underline;
+}
+
+/* Content area */
+.content {
+    flex: 1;
+}
+
+.content section {
+    background: white;
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.content h2 {
+    margin-top: 0;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 6px;
+}
+
+.content ul {
+    padding-left: 18px;
+}
+
+.content li {
+    margin-bottom: 8px;
+}
+
+/* Links inside content */
+.content a {
+    color: #2563eb;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .layout {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+    }
+}
